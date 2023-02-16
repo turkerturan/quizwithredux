@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { questionSlice } from './questionSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
-  },
+    questions: questionSlice.reducer
+  }
 });
+
+store.subscribe(() => console.log(store.getState()))
