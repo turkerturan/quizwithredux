@@ -10,8 +10,8 @@ export async function getQuestions() {
             const answerList = shuffle(q.incorrect_answers.concat(q.correct_answer))
 
             return {
-                question: q.question,
-                correctAnswer: q.correct_answer,
+                question: decodeURIComponent(q.question),
+                correctAnswer: decodeURIComponent(q.correct_answer),
                 answerList,
                 id: crypto.randomUUID(),
                 userAnswer: ""
