@@ -20,13 +20,15 @@ export default function Exam() {
             </ol>
             <br></br>
             <br></br>
+            <Link to={"/final"} style={{ textDecoration: 'none', color: 'white' }} >
             <Button
                 variant="contained"
                 size='large'
                 sx={{ display: "block", margin: "auto", minWidth: 400, marginBottom: 10 }}
             >
-                <Link to={"/final"} style={{ textDecoration: 'none', color: 'white' }} >See the results!</Link >
+                See the results!
             </Button>
+            </Link >
         </div>
     )
 }

@@ -32,13 +32,15 @@ export default function Intro() {
                         Ready for TRIVIA QUIZ?
                     </Typography>
                 </CardContent>
-                <CardActions>
-                    <Button
+                <CardActions sx={{display: "block", margin:"auto"}}>
+                    <Link to={"/exam"} style={{ textDecoration: 'none', color: 'black' }}  >
+                        <Button
                         size="big"
-                        sx={{ fontSize: 20, alignItems: 'center', margin: 'auto' }}
-                    >
-                        <Link to={"/exam"} style={{ textDecoration: 'none', color: 'black' }}  >{start}</Link >
-                    </Button>
+                        sx={{ display:"block", fontSize: 20, alignItems: 'center', margin: 'auto' }}
+                        >
+                        {start}
+                        </Button>
+                    </Link >
                 </CardActions>
             </Card>
         </>

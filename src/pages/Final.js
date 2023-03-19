@@ -21,12 +21,14 @@ export default function Final() {
             <br></br>
             <br></br>
             <br></br>
-            <Button
+            <Link to={"/"} style={{ textDecoration: 'none', color: 'white' }} >
+                <Button
                 variant="contained"
                 sx={{ display: "block", margin: "auto", minWidth: 250 }}
-            >
-                <Link to={"/"} style={{ textDecoration: 'none', color: 'white' }} >Back to INTRO and try again!</Link >
-            </Button>
+                >
+                Back to INTRO and try again!
+                </Button>
+            </Link >
         </div>
     )
 }
